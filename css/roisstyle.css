@@ -1,0 +1,51 @@
+content div {
+	margin: 30px;
+}
+
+.description {
+	display: flex;
+}
+
+.pre img {
+	height: 200px;
+	margin: 0 30px 20px 0;
+}
+
+.galerie {
+	display: flex;
+}
+
+.galerie figure {
+	margin: 0 20px 0 20px;
+}
+
+.galerie figure img {
+	width: 20vw;
+	transition: 0.5s ease all;
+}
+
+.galerie figure img:hover {
+	transform: scale(2);
+	border: 1px solid black;
+}
+
+.txtDescription {
+	border: 1px solid black;
+	height: 200px;
+	width: 75%;
+}
+
+/* responsive design */
+@media screen and (max-width: 700px) {
+
+	.galerie {
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+
+	.galerie figure img {
+		width: 50vw;
+	}	
+
+}

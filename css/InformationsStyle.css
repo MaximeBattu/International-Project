@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+} 
+
+
+/*Corps de la page web avec les articles*/
+
+#blockPage {
+	width: 80%;
+	margin: auto;
+}
+
+#articleRois, #articleDefs, #articleFrise {
+	background-color: lightgrey;
+	margin: 20px;
+	padding: 10px 10px 10px 20px;
+}
+
+h3 {
+	display: inline-block;
+	border-radius: 10px;
+	border-top: 5px solid black;
+	border-left: 5px solid black;
+	font-size: 24px;
+	padding: 5px;
+}
+
+span {
+	text-decoration: underline;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#articleFrise #frise img {
+	width: 100%;
+}
+
+#frise {
+	width: 80%;
+	margin: auto;
+}
+
+#frise img {
+	transition: 0.5s ease all;
+	border-radius: 20px;
+}
+
+#frise img:hover {
+	transform: scale(1.6);
+}
+
+
+/* responsive design */
+@media screen and (max-width: 700px) {
+
+	#frise img:hover {
+		transform: scale(2);
+	}
+}

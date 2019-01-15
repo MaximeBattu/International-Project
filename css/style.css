@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+} 
+
+
+/* Header */
+header {
+	width: 100%;
+	height: 200px;
+	background-color: lightgrey;
+	background-image: url("../img/lelionfrancais.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/*login, inscription*/
+#log, #inscr {
+	float: right;
+	margin-right: 60px;
+	background-color: #DAA520;
+	border-radius: 5px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height:30px;
+	color: white;
+}
+
+#log:hover, #inscr:hover {
+	border-bottom: 3px solid  white;
+	border-radius: 5px;
+}
+
+
+/* contenu de la page */
+a {
+	text-decoration: none;
+}
+
+.content h3 {
+	margin-left: 8%;
+}
+
+.content article div{
+	margin-left: 8%;
+	background-color: lightgrey;
+	width: 80%;
+	padding: 10px 0 10px 20px;
+}
+
+
+/* Menu */
+.menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.menu ul li {
+	width: 25%;
+	text-align: center;
+}
+
+.menu ul li a p {
+	border-top: 1px solid black;
+	background-color: grey;
+	color: black;
+	margin: 0;
+	padding: 10px 0 10px 0;
+}
+
+.menu ul li p {
+	border-top: 1px solid black;
+	background-color: grey;
+	color: black;
+	margin: 0;
+	padding: 10px 0 10px 0;
+}
+
+
+@keyframes color {
+  from {background-color: grey;}
+  to {background-color: lightgrey;}
+ }
+
+.menu ul li a p:hover {
+	animation: color 0.5s forwards;
+}
+
+#rois:hover ul { /* menu déroulant */
+	display: block;
+}
+
+#menurois {
+	display: none;
+	position: absolute;
+	width: 25%;
+}
+
+#menurois li {
+	width: 100%;
+}
+
+
+/* présentation */
+.presentation div p {
+	padding-right: 10px;
+}
+
+
+/* Liste des auteurs */
+.auteurs div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.auteurs div figure {
+	margin-right: 20px;
+	background-color: lightgrey;
+	padding: 10px 20px 10px 20px;
+}
+
+.auteurs div figure figcaption {
+	margin-bottom: 10px;
+}
+
+.auteurs img {
+	height: 100px;
+}
+
+/* footer */
+footer {
+	margin-top: 30px;
+	border-top: 1px black solid;
+	background-color: lightgrey;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+}
+
+footer p {
+	padding-top: 20px;
+}
+
+.source a {
+	color: black;
+}
+
+
+
+/* responsive design */
+@media screen and (max-width: 700px) {
+
+	header {
+		height: 100px;
+		line-height: 100px;
+	}
+
+	footer {
+		height: 100px;
+	}
+
+	#log, #inscr{
+		float: right;
+		margin-right: 20px;
+	}
+}

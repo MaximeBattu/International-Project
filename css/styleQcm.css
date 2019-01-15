@@ -1,0 +1,56 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+nav {
+	padding-bottom: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	width: 60%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+form div {
+	text-align: center;
+	border: 1px solid black;
+	margin: 10px 0 10px 0;
+	padding: 10px;
+	background-color: lightgrey;
+	border-radius: 20px;
+}
+
+form div p {
+	margin-top: 20px; 
+}
+
+label {
+	margin: 10px 0 10px 0;
+}
+
+input[type=submit] {
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+}
+
+.Reponse {
+	background-color: lightgrey;
+	width: 200px;
+	height: 100px;
+	margin: 10px auto 0 auto;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.Reponse p {
+	padding-top: 20px;
+}

@@ -1,0 +1,89 @@
+*{margin: 0px; padding: 0px;}
+
+nav {
+	margin-bottom: 50px;
+}
+
+.contenue .lien {
+	color: white;
+	display: block;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.contenue a div {
+	display: block;
+	font-family: "PT sans", sans-serif;
+	padding: 20px 0 30px 0;
+	width: 100%;
+	background-color: #960018;
+	border-radius: 7px;
+	text-align: center;
+
+	transition-property: background-color; /* Active la transition sur background-color */
+    transition-duration: all 0.50s;
+}
+
+.contenue a div:hover {
+	background-color: #A91101;
+	transform:scale(1.05);
+}
+
+.nomdynastie {
+	font-weight: bold;
+}
+
+.nbrois {
+	font-size: 30px;
+}
+
+/* responsive design */
+@media screen and (max-width: 700px) {
+
+	div {
+		font-size: 13px;
+	}
+
+	.nbrois{
+		font-size: 15px;
+	}
+
+	div {
+		padding: 10px 0 15px 0;
+	}
+
+}
+
+#DM, #DC, #DCA, #DV, #DB {
+	display: none;
+}
+
+#DM:target, #DC:target, #DCA:target, #DV:target, #DB:target {
+	display: table;
+}
+
+article {
+	margin-left: 5%;
+	width: 90%;
+	height: 400px;
+	position: fixed;
+	background-color: lightgrey;
+	z-index: 1;
+	border: 2px solid black;
+	top: 20%;
+	color: black;
+	font-size: 20px;
+}
+
+article a {
+	position: absolute;
+	right: 0;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+}
+
+article img:hover {
+	transform: scale(1.2);
+}
